@@ -48,7 +48,7 @@ export default function Object(){
        <primitive object={bg.scene} ref={group} scale={[0.8, 0.8, 0.8]} position={[0,-2,-0.12]} rotation={[0, -Math.PI / 2, 0]} />
        <primitive object={gltf.scene} ref={group} scale={[0.8, 0.8, 0.8]} position={[0,-2,-0.16]} rotation={[0, -Math.PI / 2, 0]}/>
        <Html wrapperClass="gltf" position={[0.025,0.51,0]} transform distanceFactor={2.1} rotation={[-0.051,-0.0045,0.0085]} >
-         <iframe title="embed" src="file:///./mac/index.html"/>
+         <iframe title="embed" src="./mac/index.html"/>
        </Html>
       <directionalLight position={[1,3,7]} intensity={6.5} color="#9297F3" castShadow shadow-mapSize-width={1024}
        shadow-mapSize-height={1024}
