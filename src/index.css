@@ -1,0 +1,52 @@
+html,
+body,
+#root
+{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100vh;
+  overflow:hidden;
+
+}
+.gltf iframe{
+  width: 1180px;
+  height: 662px;
+}
+body {
+  background-image: linear-gradient(rgba(252, 180, 217, 0.8),rgba(133, 193, 233));
+}
+
+body {
+  background: linear-gradient(rgba(252, 180, 217, 0.8),rgba(133, 193, 233));
+ }
+
+
+button {
+  background: linear-gradient(#4E63D9, #ABB6F3);
+   /* Set the button background color to white */
+  color: white; /* Set the button text color to blue */
+  font-weight:bold;
+  border: 2px solid white; /* Set a pale blue outline for the button */
+  border-radius: 20px; /* Add rounded corners to the button */
+  padding: 10px 30px; /* Add some padding to the button */
+  cursor: pointer; /* Change the cursor to a pointer on hover to indicate interactivity */
+  transition: background-color 0.3s, border 0.3s, color 0.3s; /* Add transition for smooth hover effect */
+   box-shadow: 0 4px 6px -3px #003366; 
+}
+
+button:hover {
+  background: linear-gradient(rgba(252, 180, 217, 0.8),rgba(133, 193, 233));  /* Change the background color on hover to pale blue */
+  border: 2px solid #2E41B0; /* Change the border color to white on hover */
+  color: #2E41B0; /* Change the text color to white on hover */
+   box-shadow: 0 6px 10px 0 #002250;
+}
+.buttons{
+  display:flex;
+  gap:10px;
+}
+
+ 
+
+
