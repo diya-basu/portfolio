@@ -298,6 +298,7 @@ span {
   padding-top: 3px;
   float: left;
   line-height: 0px;
+  cursor: pointer;
 }
 .buttons:hover a {
   visibility: visible;
