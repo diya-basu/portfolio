@@ -8,8 +8,8 @@ import { Group,PerspectiveCamera, SpotLight ,DirectionalLight,RectAreaLight,Poin
 export default function Object(){
 
     // When loading the GLTF model
-    const gltf = useLoader(GLTFLoader, './scene.gltf')
-    const bg=useLoader(GLTFLoader,'./bg.gltf')
+    const gltf = useLoader(GLTFLoader, './public/scene.gltf')
+    const bg=useLoader(GLTFLoader,'./public/bg.gltf')
     const group = useRef()
     
 

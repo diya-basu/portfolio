@@ -29,7 +29,7 @@ const LoadingScreen = () => {
   <div className="loading-screen" style={{opacity: fade? 0:1,  transition: "opacity 2s ease-in-out"}}
   >
       <div className="loader-card">
-        <img src="./Clouds.gif" alt="Diya's Mac" />
+        <img src="./public/Clouds.gif" alt="Diya's Mac" />
         <h3>Diya's Mac</h3>
       <div className="progressbar-container">
             <div className="progressbar">
