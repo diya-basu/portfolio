@@ -4,49 +4,56 @@ import './index.css'
 import {Canvas} from "@react-three/fiber"
 import {Shadow, Html, CameraControls,useProgress,Loader} from "@react-three/drei"
 import Object from "./Object"
-
+import LoadingScreen from "./LoadingScreen"
+// import { LoadingScreen } from "./LoadingScreen"
 
 
 export default function Objects() {
    const cameraControlRef = useRef();
    const [isLoading, setIsLoading] = useState(true);
 
-  //  const handleButtonClick = () => {
-  //     // Replace the URL with the desired link
-  //     window.location.href = "https://drive.google.com/file/d/1LViNS_p6i3R7LzjpsyITiqIBI8Y17R28/view?usp=sharing";
-  //   };
-  //   useEffect(() => {
-  //     // Simulate loading for 2 seconds
-  //     setTimeout(() => {
-  //       setIsLoading(false);
-  //     }, 2000);
-  //   }, []);
   
   const [start, setStart] = useState(false);
-  const [isVisible, setIsVisible] = useState(false);
-  const onStarted = () => {
-    setStart(true);
-    setIsVisible(true);
-  };
   const {progress}=useProgress();
   const [enterClicked, setEnterClicked] = useState(false);
   const [fadeIn, setFadeIn] = useState(false);
 
-  // ... other code
+ 
 
-  const handleButtonClick = () => {
-    setEnterClicked(true);
-    setTimeout(() => {
-      setFadeIn(true);
-    }, 100); // Adding a small delay before fading in
+  const [loading, setLoading] = useState(true)
+  const isMobile=window.innerWidth<768;
+
+  useEffect(() => {
+    setTimeout(() => {setLoading(false);
+    setFadeIn(true);
+  },5000);
+  }, [])
+  const show = {
+    opacity: 1,
+    display: "block"
+  };
+  
+  const hide = {
+    opacity: 0,
+    transitionEnd: {
+      display: "none"
+    }
   };
 
   return (
     <>
-    
+    {/* <Loader
+        containerStyles={{
+          // Customize loader container styles here
+          background:
+            "linear-gradient(rgba(252, 180, 217, 0.8), rgba(133, 193, 233))",
+        }}
+      ></Loader> */}
+      {loading && <LoadingScreen />}
+      
       <Canvas 
         shadows
-        camera={{ fov: 75, position: [-3, 5, 10]}}
+        camera={{ fov: isMobile?90:75,  position: isMobile?[-1,7,15]:[-3, 5, 10]}}
       >
         <CameraControls ref={cameraControlRef} enableTransition/>
         <Shadow
@@ -55,51 +62,43 @@ export default function Objects() {
           width={1024}
           height={1024}
         />
-         <Suspense fallback={null}>          
+
+         <Suspense fallback={null}>        
                   <Object /> 
-                  <Html>
-                  <div className="header" style={{  position: 'absolute',
-                    top: '-375px',
-                    left: '-725px',
-                    zIndex: 999, 
-                    }}>
-                      <h1>Diya Basu</h1>
-                    <p>Creative Developer|Content Writer</p>
+                  <Html wrapperClass="header" >
+                  <div style={{  position: 'absolute',
+                     top:isMobile?'-400px':'-375px',
+                     left:isMobile?'-180px':'-700px',}}>
+                    <h1>Diya Basu</h1>
+                    <p>•Creative Developer<br></br>•Content Writer<br></br>•AI-ML Programmer</p>
                     </div>
-                  <div className="buttons" style={{  position: 'absolute',
-                    top: '-250px',
-                    left: '-725px',
-                    zIndex: 999, 
-                    opacity: setFadeIn ? 1:0,
-                    transition: "opacity 0.5s ease-in",
+                  <div className="buttons" style={{position: 'absolute',
+                      top:isMobile?'-415px':'-430px',
+                      left:isMobile?'-190px':'-700px',
                     }}>
                     <button
                       type="button"
                       onClick={() => {
+                        isMobile? cameraControlRef.current?.setPosition(-2,7,18,true):
                         cameraControlRef.current?.setPosition(-3,5,10,true);
                       }}
                     >
-                      View Scene
+                       Scene
                     </button>
                     <button
                       type="button"
                       onClick={() => {
+                        isMobile?cameraControlRef.current?.setPosition(0,0,5.8,true):
                         cameraControlRef.current?.setPosition(0,0.5,3.8,true);
                       }}
                     >
-                      Explore More
+                      Explore
                     </button>
                   </div>
-                  </Html>             
+                  </Html>           
       </Suspense>
       </Canvas>
-      <Loader
-      containerStyles={{
-        background: "linear-gradient(rgba(252, 180, 217, 0.8),rgba(133, 193, 233))",
-      }}
-      >   
-      </Loader>
-      {progress === 100}
-      </>        
+      
+      </>
   );
 }

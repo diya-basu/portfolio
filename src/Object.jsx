@@ -8,9 +8,11 @@ import { Group,PerspectiveCamera, SpotLight ,DirectionalLight,RectAreaLight,Poin
 export default function Object(){
 
     // When loading the GLTF model
-    const gltf = useLoader(GLTFLoader, './scene.gltf')
-    const bg=useLoader(GLTFLoader,'./bg.gltf')
+    const gltf = useLoader(GLTFLoader, '/scene.gltf')
+    const bg=useLoader(GLTFLoader,'/bg.gltf')
     const group = useRef()
+    
+
   
 
     useEffect(() => {
@@ -31,20 +33,21 @@ export default function Object(){
         });
       }, [bg.scene]);
 
- 
 
     
 
     return<>
-      <OrbitControls
+        <OrbitControls
         enableZoom={false}
-        minAzimuthAngle={-Math.PI / 8}  // Limit to 45 degrees to the left
+        minDistance={4}
+        maxDistance={15}
+        minAzimuthAngle={-Math.PI / 26}  // Limit to 45 degrees to the left
         maxAzimuthAngle={Math.PI / 8} 
         minPolarAngle={0}  // Limit rotation to horizontal plane (no rotation downwards)
         maxPolarAngle={Math.PI/2} 
         position0={[-3,5,10]}
       />
-
+       <group>
        <primitive object={bg.scene} ref={group} scale={[0.8, 0.8, 0.8]} position={[0,-2,-0.12]} rotation={[0, -Math.PI / 2, 0]} />
        <primitive object={gltf.scene} ref={group} scale={[0.8, 0.8, 0.8]} position={[0,-2,-0.16]} rotation={[0, -Math.PI / 2, 0]}/>
        <Html wrapperClass="gltf" position={[0.025,0.51,0]} transform distanceFactor={2.1} rotation={[-0.051,-0.0045,0.0085]} >
@@ -56,7 +59,7 @@ export default function Object(){
       <pointLight position={[0, 10, -10]} castShadow intensity={75} color="lightpink"/>
        <ambientLight intensity={2.5}/>
        <ContactShadows rotation-x={Math.PI / 2} position={[0,-2.045, -0.16]} blur={0.8} opacity={0.49} scale={[15,15]} frames={1}/>
-       
+       </group>
     </>
 }
 

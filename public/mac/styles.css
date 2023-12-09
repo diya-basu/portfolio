@@ -72,7 +72,7 @@ body {
       transform: scale(0.6);
       margin-right: 2px;
     }
-    .menu-time {
+    .menutime {
       height: 100%;
       width: auto;
       display: flex;
@@ -104,7 +104,7 @@ body {
   position: fixed;
   bottom: 0px;
   /*left: 280px;*/
-  left:140px;
+  left:145px;
   background: rgba(83, 83, 83, 0.25);
   backdrop-filter: blur(13px);
   -webkit-backdrop-filter: blur(13px);
@@ -231,7 +231,7 @@ span {
 .folder-name{
   position:absolute;
   top:180px;
-  left:105px;
+  left:100px;
   font-size:15px;
   font-weight: bold;
   cursor:pointer;
@@ -246,7 +246,7 @@ span {
   width: 60vw;
   height: 75vh;
   margin: auto;
-  margin-top: 1vh;
+  margin-top: 2vh;
   border: 1px solid #acacac;
   border-radius: 6px;
   box-shadow: 0px 0px 20px #acacac;
@@ -393,7 +393,7 @@ span {
 .sidebar-container {
   display:flex;
   width: 160px;
-  height:72vh;
+  height:71.5vh;
   background: #f0f0f0;
   padding: 10px;
   box-sizing: border-box;
@@ -535,7 +535,7 @@ span {
 }
 
 #contact table input[type="submit"]:hover {
-  background: rgb(37, 150, 190);
+  background: rgb(88, 120, 227);
   color: #fff;
 }
 
@@ -546,7 +546,7 @@ span {
 }
 
 #contact-icon i:hover {
-  color: rgb(37, 150, 190);
+  color: rgb(94, 105, 204);
   font-size: 25px;
   transition: 0.2s;
 }
@@ -602,3 +602,28 @@ span {
   font-weight: bold;
   font-size: 20px;
 }
+
+
+
+/* CSS */
+.resume-button {
+  margin-top:10px;
+  height:40px;
+  font-weight:bold;
+  border: 2px solid white;
+  padding:10px 30px;
+  border-radius: 20px;
+  align-items:center;
+  justify-content:center;
+  background-color: #000;
+  color:white;
+  cursor:pointer;
+  background-origin: padding-box;
+
+}
+.resume-button:hover{
+  background-color: white;
+  color:#000;
+  border:2px solid black;
+}
+
