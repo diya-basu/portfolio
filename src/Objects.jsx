@@ -20,7 +20,7 @@ export default function Objects() {
 
  
 
-  const [loading, setLoading] = useState(true)
+  const [loading, setLoading] = useState(true);
   const isMobile=window.innerWidth<768;
 
   useEffect(() => {
@@ -28,17 +28,7 @@ export default function Objects() {
     setFadeIn(true);
   },5000);
   }, [])
-  const show = {
-    opacity: 1,
-    display: "block"
-  };
-  
-  const hide = {
-    opacity: 0,
-    transitionEnd: {
-      display: "none"
-    }
-  };
+ 
 
   return (
     <>
