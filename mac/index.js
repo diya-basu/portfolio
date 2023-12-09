@@ -93,7 +93,7 @@ document.addEventListener('DOMContentLoaded', function () {
     <div class='projects'> 
     <span class = 'project-name'> • Langchain Document Chatbot</span><br>  
     The chatbot was built using NLP frameworks and AI API technologies: there are currently two versions: OpenAI and Huggingface’s dollybv2 model powering the bot. This allows users to interact with the information contained in their documents: supports pdf, text, word documents and even images.
-    <a href="https://github.com/diya-basu/Langchain-Document-chatbot">
+    <a href="https://github.com/diya-basu/Langchain-Document-chatbot" target="_top">
        (source code)
     </a>
     </div>
@@ -101,7 +101,7 @@ document.addEventListener('DOMContentLoaded', function () {
     <div class='projects'> 
     <span class = 'project-name'> • ALICE</span><br>  
     A.L.I.C.E - A language interface connector environment.A virtual assistant based in Python, which is will only be activated and deactivated using voice commands. This assistant derives its operational bases from AI and NLP techniques to perform tasks orated by the users.
-    <a href="https://github.com/diya-basu/ALICE">
+    <a href="https://github.com/diya-basu/ALICE" target="_top">
        (source code)
     </a>
     </div>
@@ -110,7 +110,7 @@ document.addEventListener('DOMContentLoaded', function () {
     
     <span class = 'project-name'> • Stock Prediction App:streamlit</span><br>  
     Streamlit app built in python using Deep learning framework(built from scratch) to predict the prices of popular stocks in the upcoming years.
-    <a href="https://github.com/diya-basu/Stock-Prediction-App-Streamlit">
+    <a href="https://github.com/diya-basu/Stock-Prediction-App-Streamlit" target="_top">
        (source code)
     </a>
     </div>
@@ -119,7 +119,7 @@ document.addEventListener('DOMContentLoaded', function () {
     
     <span class = 'project-name'> • Song Recommendation App:Streamlit</span><br>  
     Built using streamlit in python and the Spotipy module, the app recommends a list of songs based on the last song you listened to.
-    <a href="https://github.com/diya-basu/Song-Recommendation-App-Streamlit">
+    <a href="https://github.com/diya-basu/Song-Recommendation-App-Streamlit" target="_top">
        (source code)
     </a>
     </div>
@@ -127,7 +127,7 @@ document.addEventListener('DOMContentLoaded', function () {
     <div class='projects'> 
     <span class = 'project-name'> • Age and Gender Detection:OpenCV</span><br>  
     Using OpenCV in python this deep learning model can tell the gender and age of any person from their photos.
-    <a href="https://github.com/diya-basu/Age-and-gender-detection-using-OpenCV">
+    <a href="https://github.com/diya-basu/Age-and-gender-detection-using-OpenCV" target="_top">
        (source code)
     </a>
     </div>
@@ -135,7 +135,7 @@ document.addEventListener('DOMContentLoaded', function () {
     <div class='projects'> 
     <span class = 'project-name'> • Extract text from images: EasyOCR</span><br>  
     Utilizes the EasyOCR module in python this tool helps in extracting text from images by mapping text to individual characters.
-    <a href="https://github.com/diya-basu/Extract-text-from-images-EasyOCR-">
+    <a href="https://github.com/diya-basu/Extract-text-from-images-EasyOCR-" target="_top">
        (source code)
     </a>
     </div>
@@ -143,7 +143,7 @@ document.addEventListener('DOMContentLoaded', function () {
     <div class='projects'> 
     <span class = 'project-name'> • GDP analysis of countries</span><br>  
     This Jupyter Notebook analyses the GDP of all the countries from the infamous "countries of the world" dataset and applies ML frameworks to analyse and predict future GDPs of the countries. 
-    <a href="https://github.com/diya-basu/GDP-analysis-of-countries">
+    <a href="https://github.com/diya-basu/GDP-analysis-of-countries" target="_top">
        (source code)
     </a>
     </div>
@@ -151,7 +151,7 @@ document.addEventListener('DOMContentLoaded', function () {
     <div class='projects'> 
     <span class = 'project-name'> • ML Loan Prediction problem</span><br>  
     Jupyter Notebook to classify if a person is eligible for a loan or not based on feature analysis and classification techniques like Naive Bayes, Decision trees, Random forest classification, and Logistic Regression. (Analytics Vidhya contest score: 6.57)
-    <a href="https://github.com/diya-basu/ML-Loan-prediction-problem">
+    <a href="https://github.com/diya-basu/ML-Loan-prediction-problem" target="_top">
        (source code)
     </a>
     </div>
@@ -159,7 +159,7 @@ document.addEventListener('DOMContentLoaded', function () {
     <div class='projects'> 
     <span class = 'project-name'> • Facial-Recognition using OpenCV</span><br>  
     The bot is trained on a folder of images called known_images, and can accurately identify people from that folder in real-time.
-    <a href="https://github.com/diya-basu/Facial-Recognition-using-OPENCV-python">
+    <a href="https://github.com/diya-basu/Facial-Recognition-using-OPENCV-python" target="_top">
        (source code)
     </a>
     </div>
@@ -167,7 +167,7 @@ document.addEventListener('DOMContentLoaded', function () {
     <div class='projects'> 
     <span class = 'project-name'> • Gradient Descent</span><br>  
     Jupyter Notebook to visualise the gradient descent algorithm in machine learning by varying parameters.
-    <a href="https://github.com/diya-basu/Gradient-Descent">
+    <a href="https://github.com/diya-basu/Gradient-Descent" target="_top">
        (source code)
     </a>
     </div>
@@ -175,7 +175,7 @@ document.addEventListener('DOMContentLoaded', function () {
     <div class='projects'> 
     <span class = 'project-name'> • Movie Recommendation System</span><br>  
     OTT platform's TOP PICKS for YOU clone. Using Cosine similarity the given tool returns a list of ten movies you should watch based off of the last movie that you liked.
-    <a href="https://github.com/diya-basu/Movie-Recommendation">
+    <a href="https://github.com/diya-basu/Movie-Recommendation" target="_top">
        (source code)
     </a>
     </div>
@@ -183,7 +183,7 @@ document.addEventListener('DOMContentLoaded', function () {
     <div class='projects'> 
     <span class = 'project-name'> • Sequential DL model</span><br>  
     Google-Colab notebook to visualise the working of a simple sequential Deep Learning model.
-    <a href="https://github.com/diya-basu/Sequential-Deep-Learning-model">
+    <a href="https://github.com/diya-basu/Sequential-Deep-Learning-model" target="_top">
        (source code)
     </a>
     </div>
@@ -193,7 +193,7 @@ document.addEventListener('DOMContentLoaded', function () {
  
     <span class = 'project-name'> • Youtube Transcripter and Summarizer</span><br>  
     With its back end API developed on Python, and it’s front end coded on Javascript and HTML5, functions as a chrome extension. With the use of CORS unblocker, it is very easy to upload the program files as extensions and use them for processing of data and retrieving summaries of YouTube videos. Alternatively, this can also be deployed as an HTML web page and used to derive the summary of a YouTube video.
-    <a href="https://github.com/diya-basu/YouTube-Transcript-Summarizer">
+    <a href="https://github.com/diya-basu/YouTube-Transcript-Summarizer" target="_top">
        (source code)
     </a>
     </div>
@@ -237,7 +237,7 @@ document.addEventListener('DOMContentLoaded', function () {
     <div class='projects'> 
     <span class = 'project-name'> • Amazon Price Tracker</span><br>  
     This project developed on python aims to derive data from Amazon website of the product that the user wants to track the price of. It utilises the SMTP module in python to send emails to the user when the price of the item falls below the limit set by the user.
-    <a href="https://github.com/diya-basu/Amazon-Price-Tracker">
+    <a href="https://github.com/diya-basu/Amazon-Price-Tracker" target="_top">
        (source code)
     </a>
     </div>
@@ -245,7 +245,7 @@ document.addEventListener('DOMContentLoaded', function () {
     <div class='projects'> 
     <span class = 'project-name'> •Spotify Playlist</span><br>  
     Scrapes data from the BillBoard HOT 100 website of the top songs on a given date, and turns it into a Spotify playlist. Built using BeautifulSoup and Spotipy module in python.
-    <a href="https://github.com/diya-basu/Spotify-Playlist">
+    <a href="https://github.com/diya-basu/Spotify-Playlist" target="_top">
        (source code)
     </a>
     </div>
@@ -253,7 +253,7 @@ document.addEventListener('DOMContentLoaded', function () {
     <div class='projects'> 
     <span class = 'project-name'> • Movie Webscraper</span><br>  
     Scraping data from Empire's greatest movies of all time and displaying it in a text file. The project aims to develop a more synthetic way of deriving data from websites for processing and analysis purposes to provide a much more easier way of data collection which can be further utilised to train machine learning models
-    <a href="https://github.com/diya-basu/Movie-Webscraper">
+    <a href="https://github.com/diya-basu/Movie-Webscraper" target="_top">
        (source code)
     </a>
     </div>
@@ -307,7 +307,7 @@ const sectionHeading = {
   skillsSection: "My Skills",
   projectsSection: "My Projects",
   workSection: "Work Experience",
-  contactSection: "Contact Me"+"<br><br><br><div id='contact-icon'>"+"<a href='https://github.com/diya-basu'><i class='devicon-github-original' ></i></a>"+"<a href = 'https://www.linkedin.com/in/diyabasu73/'><i class='devicon-linkedin-plain' ></i></a>"+"<a href='https://codepen.io/Diya-Basu'><i class='devicon-codepen-plain' ></i></a>"+"<a href = 'mailto: diya.basu73@gmail.com'><i class='devicon-google-plain'></i></a>"+"</div>"
+  contactSection: "Contact Me"+"<br><br><br><div id='contact-icon'>"+"<a href='https://github.com/diya-basu' target='_top'><i class='devicon-github-original' ></i></a>"+"<a href = 'https://www.linkedin.com/in/diyabasu73/' target='_top'><i class='devicon-linkedin-plain' ></i></a>"+"<a href='https://codepen.io/Diya-Basu' target='_top'><i class='devicon-codepen-plain' ></i></a>"+"<a href = 'mailto: diya.basu73@gmail.com'><i class='devicon-google-plain' target='_top'></i></a>"+"</div>"
 };
   // Sidebar click events
   var sections = document.querySelectorAll('.section');
@@ -344,3 +344,31 @@ const sectionHeading = {
 });
 
 
+//function to display the realtime date and time. 
+
+function menutime() {
+  var time = new Date(),
+      daysOfWeek = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
+      months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+      day = daysOfWeek[time.getDay()],
+      date = time.getDate(),
+      month = months[time.getMonth()],
+      hours = time.getHours(),
+      minutes = time.getMinutes(),
+      ampm = hours >= 12 ? 'PM' : 'AM';
+
+  // Convert hours to 12-hour format
+  hours = hours % 12;
+  hours = hours ? hours : 12; // If hours is 0, make it 12
+
+  document.querySelectorAll('.menutime')[0].innerHTML = `${day} ${date} ${month} ${harold(hours)}:${harold(minutes)}${ampm}`;
+
+  function harold(standIn) {
+    if (standIn < 10) {
+      standIn = '0' + standIn;
+    }
+    return standIn;
+  }
+}
+
+setInterval(menutime, 1000);
