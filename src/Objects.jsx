@@ -11,6 +11,7 @@ import LoadingScreen from "./LoadingScreen"
 export default function Objects() {
    const cameraControlRef = useRef();
    const [isLoading, setIsLoading] = useState(true);
+   const transitaudio=new Audio('./whoosh.mp3');
 
   
   const [start, setStart] = useState(false);
@@ -29,6 +30,12 @@ export default function Objects() {
   },6000);
   }, [])
  
+  const [isPlaying, setIsPlaying] = useState(false);
+  const bgaudio = new Audio('./catbgaudio.mp3');
+  
+
+ 
+
 
   return (
     <>
@@ -60,9 +67,9 @@ export default function Objects() {
                      top:isMobile?'-400px':'-375px',
                      left:isMobile?'-180px':'-700px',}}>
                     <h1>Diya Basu</h1>
-                    <p>•Creative Developer<br></br>•Content Writer<br></br>•AI-ML Programmer</p>
+                    <p>•Creative Developer<br></br>•Content Writer<br></br>•AI-ML Programmer </p>
                     </div>
-                  <div className="buttons" style={{position: 'absolute',
+                    <div className="buttons" style={{position: 'absolute',
                       top:isMobile?'-435px':'-420px',
                       left:isMobile?'-190px':'-700px',
                     }}>
@@ -71,6 +78,7 @@ export default function Objects() {
                       onClick={() => {
                         isMobile? cameraControlRef.current?.setPosition(-2,7,18,true):
                         cameraControlRef.current?.setPosition(-3,5,10,true);
+                        transitaudio.play();
                       }}
                     >
                        Scene
@@ -80,6 +88,9 @@ export default function Objects() {
                       onClick={() => {
                         isMobile?cameraControlRef.current?.setPosition(0,0,5.8,true):
                         cameraControlRef.current?.setPosition(0,0.5,3.8,true);
+                        transitaudio.play();
+                        bgaudio.play();
+                        bgaudio.loop(true);
                       }}
                     >
                       Explore
