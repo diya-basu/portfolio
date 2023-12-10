@@ -106,3 +106,6 @@ button:hover {
   transition: opacity 0.5s ease-in;
 }
 
+.header{ 
+  gap:20px;
+}
