@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', function () {
     folderWindow.style.height = parseInt(folderWindow.style.height) * 1.1 + 'px';
   });
   const sectionContent = {
-    aboutSection: "<p id='about-me'>Heyy there! I am Diya 👋 <br>I'm a Creative developer, content writer currently pursuing a degree in Computer Science Engineering with a specialization in Artificial Intelligence and Machine Learning. Set to graduate from college in July 2025, I’m excited to deploy my skill set in the real world and have an active hand in the rapidly changing technology of today. Owing to my love for doomsday tech films: My projects under development range from working with AI-ML frameworks and Large language models to creating immersive websites with storytelling techniques.<br>I am an avid internet observer, and like to gather inspiration from anything and everything I can find on the internet. When I am not stuck on a bug on line 42(of 400) I like to spend my time reading and returning back to my childhood of fine arts. <br> Head on over to the sections on the left to find out more.<br> Thank you for visiting!:) </p>",
+    aboutSection: "<a href='https://drive.google.com/file/d/1LViNS_p6i3R7LzjpsyITiqIBI8Y17R28/view' target='_top'><button class='resume-button'>Resume</button></a><br><p id='about-me'>Heyy there! I am Diya 👋 <br>I'm a Creative developer, content writer currently pursuing a degree in Computer Science Engineering with a specialization in Artificial Intelligence and Machine Learning. Set to graduate from college in July 2025, I’m excited to deploy my skill set in the real world and have an active hand in the rapidly changing technology of today. Owing to my love for doomsday tech films: My projects under development range from working with AI-ML frameworks and Large language models to creating immersive websites with storytelling techniques.<br>I am an avid internet observer, and like to gather inspiration from anything and everything I can find on the internet. When I am not stuck on a bug on line 42(of 400) I like to spend my time reading and returning back to my childhood of fine arts. <br> Head on over to the sections on the left to find out more.<br> Thank you for visiting!:) </p>",
     skillsSection: "<br><p>(Hover on icons for proficiency level)</p><br>"+
     "<br><br>"+"<p id='skills-container'>"+
     "<i class='devicon-python-plain' style='font-size:48px;' title = 'Proficiency: 4.5/5'></i>"+
@@ -201,6 +201,9 @@ document.addEventListener('DOMContentLoaded', function () {
     <div class='projects'> 
     <span class = 'project-name'> •Portfolio:Diya's desk tour</span><br>  
     Built using Threejs in React-three Fiber, my portfolio is comprised of two parts: a 2D OS style website and a 3D overlay model. This framework was created with the intention of showcasing my coding skills and also to create an immersive experience for those visiting my website.
+    <a href="https://github.com/diya-basu/portfolio" target="_top">
+       (source code)
+    </a>
     </div>
 
     <div class='projects'> 
@@ -361,7 +364,7 @@ function menutime() {
   hours = hours % 12;
   hours = hours ? hours : 12; // If hours is 0, make it 12
 
-  document.querySelectorAll('.menutime')[0].innerHTML = `${day} ${date} ${month} ${harold(hours)}:${harold(minutes)}${ampm}`;
+  document.querySelectorAll('.menutime')[0].innerHTML = `${day} ${date} ${month} ${harold(hours)}:${harold(minutes)}  ${ampm}`;
 
   function harold(standIn) {
     if (standIn < 10) {
