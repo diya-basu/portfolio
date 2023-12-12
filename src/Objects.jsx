@@ -27,16 +27,25 @@ export default function Objects() {
   useEffect(() => {
     setTimeout(() => {setLoading(false);
     setFadeIn(true);
-  },6000);
+  },8000);
   }, [])
+
+  // useEffect(() => {
+  //   if (progress === 100) {
+  //     // Set a timeout to fade out after a certain duration (e.g., 2 seconds)
+  //     const fadeOutTimeout = setTimeout(() => {
+  //       setLoading(false);
+  //       setFadeIn(false);
+  //     }, 2000);
+
+  //     // Clear the timeout on component unmount (cleanup)
+  //     return () => clearTimeout(fadeOutTimeout);
+  //   }
+  // }, [progress]);
  
   const [isPlaying, setIsPlaying] = useState(false);
   const bgaudio = new Audio('./catbgaudio.mp3');
   
-  
-
- 
-
 
   return (
     <>
@@ -47,7 +56,7 @@ export default function Objects() {
             "linear-gradient(rgba(252, 180, 217, 0.8), rgba(133, 193, 233))",
         }}
       ></Loader> */}
-      {loading && <LoadingScreen />}
+      {loading && <LoadingScreen/>}
       
       <Canvas 
         shadows
