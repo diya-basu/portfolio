@@ -1,4 +1,4 @@
-import {OrbitControls,useGLTF,Environment,Html,ContactShadows,Plane, SoftShadows,AccumulativeShadows,RandomizedLight,BakeShadows} from "@react-three/drei"
+import {OrbitControls,useGLTF,Html,ContactShadows,PositionalAudio} from "@react-three/drei"
 import {useLoader} from "@react-three/fiber"
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader"
 import { useEffect, useRef } from "react"
@@ -48,6 +48,7 @@ export default function Object(){
         position0={[-3,5,10]}
       />
        <group>
+       {/* <PositionalAudio url="./catbgaudio.mp3" loop={true}/> */}
        <primitive object={bg.scene} ref={group} scale={[0.8, 0.8, 0.8]} position={[0,-2,-0.12]} rotation={[0, -Math.PI / 2, 0]} />
        <primitive object={gltf.scene} ref={group} scale={[0.8, 0.8, 0.8]} position={[0,-2,-0.16]} rotation={[0, -Math.PI / 2, 0]}/>
        <Html wrapperClass="gltf" position={[0.025,0.51,0]} transform distanceFactor={2.1} rotation={[-0.051,-0.0045,0.0085]} >

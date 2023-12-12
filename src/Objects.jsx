@@ -33,6 +33,7 @@ export default function Objects() {
   const [isPlaying, setIsPlaying] = useState(false);
   const bgaudio = new Audio('./catbgaudio.mp3');
   
+  
 
  
 
@@ -90,7 +91,7 @@ export default function Objects() {
                         cameraControlRef.current?.setPosition(0,0.5,3.8,true);
                         transitaudio.play();
                         bgaudio.play();
-                        bgaudio.loop(true);
+                        bgaudio.loop=true;
                       }}
                     >
                       Explore
