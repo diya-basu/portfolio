@@ -27,7 +27,7 @@ export default function Objects() {
   useEffect(() => {
     setTimeout(() => {setLoading(false);
     setFadeIn(true);
-  },8000);
+  },7000);
   }, [])
 
   // useEffect(() => {
