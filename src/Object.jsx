@@ -6,6 +6,8 @@ import { Group,PerspectiveCamera, SpotLight ,DirectionalLight,RectAreaLight,Poin
 
 
 export default function Object(){
+  useGLTF.preload('./scene.gltf')
+  useGLTF.preload('./bg.gltf')
 
     // When loading the GLTF model
     const gltf = useLoader(GLTFLoader, './scene.gltf')
@@ -54,11 +56,11 @@ export default function Object(){
        <Html wrapperClass="gltf" position={[0.025,0.51,0]} transform distanceFactor={2.1} rotation={[-0.051,-0.0045,0.0085]} >
          <iframe title="embed" src="./mac/index.html"/>
        </Html>
-      <directionalLight position={[1,3,7]} intensity={6.5} color="#9297F3" castShadow shadow-mapSize-width={1024}
+      <directionalLight position={[1,3,7]} intensity={4.5} color="#9297F3" castShadow shadow-mapSize-width={1024}
        shadow-mapSize-height={1024}
       />
-      <pointLight position={[0, 10, -10]} castShadow intensity={75} color="lightpink"/>
-       <ambientLight intensity={2.5}/>
+      <pointLight position={[0, 10, -3]} castShadow intensity={75} color="lightblue"/>
+       <ambientLight intensity={2}/>
        <ContactShadows rotation-x={Math.PI / 2} position={[0,-2.045, -0.16]} blur={0.8} opacity={0.49} scale={[15,15]} frames={1}/>
        </group>
     </>
