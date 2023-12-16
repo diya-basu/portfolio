@@ -18,6 +18,8 @@ export default function Objects() {
   const {progress}=useProgress();
   const [enterClicked, setEnterClicked] = useState(false);
   const [fadeIn, setFadeIn] = useState(false);
+  const bgaudio=new Audio('./catbgaudio.mp3');
+  const transitaudio=new Audio('./whoosh.mp3');
 
 
  
@@ -55,7 +57,7 @@ export default function Objects() {
       
       <Canvas 
         shadows
-        camera={{ fov: isMobile?90:75,  position: isMobile?[-3,30,80]:[-3, 5, 10]}}
+        camera={{ fov: isMobile?90:75,  position: isMobile?[-3,30,80]:[-3, 4, 10]}}
       >
         <fog attach="fog" args={["#6F7CBE",20,30]}/>
         <CameraControls ref={cameraControlRef} enableTransition/>
@@ -73,26 +75,30 @@ export default function Objects() {
                      top:isMobile?'-400px':'-375px',
                      left:isMobile?'-180px':'-700px',}}>
                     <h1>Diya Basu</h1>
-                    <p>Creative Developer|Content Writer</p>
+                    <p>•Creative Developer<br></br>•Content Writer<br></br>•AI-ML Programmer</p>
                     </div>
                   <div className="buttons" style={{position: 'absolute',
-                      top:isMobile?'-450px':'-460px',
+                      top:isMobile?'-450px':'-430px',
                       left:isMobile?'-190px':'-700px',
                     }}>
                     <button
                       type="button"
                       onClick={() => {
                         isMobile? cameraControlRef.current?.setPosition(-3,30,80,true):
-                        cameraControlRef.current?.setPosition(-3,5,10,true);
+                        cameraControlRef.current?.setPosition(-3,4,10,true);
+                        transitaudio.play();
                       }}
                     >
-                       Scene
+                       View Scene
                     </button>
                     <button
                       type="button"
                       onClick={() => {
                         isMobile?cameraControlRef.current?.setPosition(0,0,5.8,true):
                         cameraControlRef.current?.setPosition(0,0.5,3.8,true);
+                        bgaudio.play();
+                        bgaudio.loop=true;
+                        transitaudio.play();
                       }}
                     >
                       Explore

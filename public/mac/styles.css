@@ -18,7 +18,7 @@
 }
 
 body {
-  background: url("images/background.png");
+  background: url("images/clouds.jpeg");
   background-position: center;
   color: #000;
   font-family: HelveticaNeue, 'Helvetica Neue', 'Lucida Grande', Arial, sans-serif;
@@ -35,7 +35,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: rgba(83, 83, 83, 0.4);
+  background: rgba(63, 115, 206, 0.4);
   backdrop-filter: blur(80px);
   -webkit-backdrop-filter: blur(50px);
 
