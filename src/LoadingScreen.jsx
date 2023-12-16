@@ -19,7 +19,7 @@ const LoadingScreen = () => {
     // Trigger fade-out after 5000 milliseconds (5 seconds)
     const fadeOutTimeout = setTimeout(() => {
       setFade(true);
-    }, 4000);
+    }, 2000);
     // Clear the timeout when the component unmounts or when fade completes
     return () => clearTimeout(fadeOutTimeout);
   }, []);
