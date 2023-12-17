@@ -30,7 +30,7 @@ export default function Objects() {
   useEffect(() => {
     setTimeout(() => {setLoading(false);
     setFadeIn(true);
-  },4000);
+  },5000);
   }, [])
   const show = {
     opacity: 1,
@@ -57,10 +57,10 @@ export default function Objects() {
       
       <Canvas 
         shadows
-        camera={{ fov: isMobile?90:75,  position: isMobile?[-3,30,80]:[-3, 4, 10]}}
+        camera={{ fov: isMobile?90:75,  position: isMobile?[15,30,80]:[7, 6, 13]}}
       >
-        <fog attach="fog" args={["#6F7CBE",20,30]}/>
-        <CameraControls ref={cameraControlRef} enableTransition/>
+        <fog attach="fog" args={["#95a6e8",20,30]}/>
+        <CameraControls ref={cameraControlRef} enableTransition enableZoom={false}/>
         <Shadow
           scale={2}
           bias={-0.001}
@@ -85,7 +85,7 @@ export default function Objects() {
                       type="button"
                       onClick={() => {
                         isMobile? cameraControlRef.current?.setPosition(-3,30,80,true):
-                        cameraControlRef.current?.setPosition(-3,4,10,true);
+                        cameraControlRef.current?.setPosition(7,6,13,true);
                         transitaudio.play();
                       }}
                     >
@@ -94,8 +94,8 @@ export default function Objects() {
                     <button
                       type="button"
                       onClick={() => {
-                        isMobile?cameraControlRef.current?.setPosition(0,0,5.8,true):
-                        cameraControlRef.current?.setPosition(0,0.5,3.8,true);
+                        isMobile?cameraControlRef.current?.setPosition(2,0,-9,true):
+                        cameraControlRef.current?.setPosition(1,1.5,-7,true);
                         bgaudio.play();
                         bgaudio.loop=true;
                         transitaudio.play();

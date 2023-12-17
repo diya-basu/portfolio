@@ -13,19 +13,18 @@ export default function Object(){
     return<>
         <OrbitControls
         enableZoom={false}
-
+      
         minDistance={4}
-        maxDistance={13}
-        minAzimuthAngle={-Math.PI / 26}  // Limit to 45 degrees to the left
-        maxAzimuthAngle={Math.PI / 8} 
+        maxDistance={15}
+        minAzimuthAngle={-Math.PI / 4}  // Limit to 45 degrees to the left
+        maxAzimuthAngle={Math.PI / 4} 
         minPolarAngle={0}  // Limit rotation to horizontal plane (no rotation downwards)
         maxPolarAngle={Math.PI/2} 
-        position0={[-3,5,10]}
       />
        <group>
        {/* <primitive object={bg.scene} ref={group} scale={[0.8, 0.8, 0.8]} position={[0,-2,-0.12]} rotation={[0, -Math.PI / 2, 0]} /> */}
-       <primitive object={fullscene.scene} ref={group} scale={[0.8, 0.8, 0.8]} position={[0,-2,-0.16]} rotation={[0, -Math.PI / 2, 0]}/>
-       <Html wrapperClass="gltf" position={[0.024,0.51,-0]} transform distanceFactor={2.1} rotation={[-0.0098,-0.0001,-0.009]} >
+       <primitive object={fullscene.scene} ref={group} position={[0,-2,-0.16]} rotation={[0,-Math.PI/4.09,0]}/>
+       <Html wrapperClass="gltf" position={[0.21,1.13,0.001]} transform distanceFactor={2.5} rotation={[-0.013,Math.PI/4,0]} >
          <iframe title="embed" src="./mac/index.html"/>
        </Html>
       {/* <directionalLight position={[1,3,7]} intensity={6.5} color="#9297F3" castShadow shadow-mapSize-width={1024}

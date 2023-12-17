@@ -104,7 +104,7 @@ body {
   position: fixed;
   bottom: 0px;
   /*left: 280px;*/
-  left:145px;
+  margin-left:180px;
   background: rgba(83, 83, 83, 0.25);
   backdrop-filter: blur(13px);
   -webkit-backdrop-filter: blur(13px);
