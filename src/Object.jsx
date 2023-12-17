@@ -25,12 +25,6 @@ export default function Object(){
        <Html wrapperClass="gltf" position={[0.21,1.13,0.001]} transform distanceFactor={2.5} rotation={[-0.013,Math.PI/4,0]} >
          <iframe title="embed" src="./mac/index.html"/>
        </Html>
-      {/* <directionalLight position={[1,3,7]} intensity={6.5} color="#9297F3" castShadow shadow-mapSize-width={1024}
-       shadow-mapSize-height={1024}
-      />
-      <pointLight position={[0, 10, -10]} castShadow intensity={75} color="lightpink"/>
-       <ambientLight intensity={2.5}/>
-       <ContactShadows rotation-x={Math.PI / 2} position={[0,-2.045, -0.16]} blur={0.8} opacity={0.49} scale={[15,15]} frames={1}/> */}
        </group>
     </>
 }
