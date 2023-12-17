@@ -12,9 +12,7 @@ export default function Object(){
     const group = useRef()
     return<>
         <OrbitControls
-        enableZoom={false}
-      
-        minDistance={4}
+        minDistance={6}
         maxDistance={15}
         minAzimuthAngle={-Math.PI / 4}  // Limit to 45 degrees to the left
         maxAzimuthAngle={Math.PI / 4} 
