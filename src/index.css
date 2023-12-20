@@ -115,3 +115,22 @@ button:hover {
 .header{ 
   gap:30px;
 }
+.tooltip-container {
+  position: relative;
+  display: inline-block;
+}
+
+button[title]:hover::before {
+  content: attr(title);
+  display: block;
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 8px;
+  background-color:inherit;
+  color: #fff;
+  border-radius: 4px;
+  white-space: nowrap;
+  transition-delay: 0s;
+}
