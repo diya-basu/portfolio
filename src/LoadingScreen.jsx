@@ -39,8 +39,8 @@ const LoadingScreen = () => {
                     width: `${progress}%`
                 }}
                 transition={{
-                    duration: 2,
-                    delay:0.3
+                    duration: 1.8,
+                    delay:0.1
                 }}
                 />
             </div>

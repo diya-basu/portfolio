@@ -73,7 +73,12 @@ button:hover {
   z-index:1;
   margin-bottom:40px;
 }
-
+.header music-button{
+  width:10px;
+  height:10px;
+  background:inherit;
+  margin-top:10px;
+}
 /* @media screen and(max-width:768px){
    .header{
     margin-left:10px;

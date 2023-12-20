@@ -30,6 +30,9 @@ export default function Objects() {
   useEffect(() => {
     setTimeout(() => {setLoading(false);
     setFadeIn(true);
+    bgaudio.play();
+    bgaudio.loop=true;
+    bgaudio.volume=0.1;
   },4000);
   }, [])
   const show = {
@@ -96,14 +99,11 @@ export default function Objects() {
                       onClick={() => {
                         isMobile?cameraControlRef.current?.setPosition(2,0,-9,true):
                         cameraControlRef.current?.setPosition(1,1.5,-7,true);
-                        bgaudio.play();
-                        bgaudio.loop=true;
-                        transitaudio.play();
                       }}
                     >
                       Explore
                     </button>
-                  </div>
+                    </div>
                   </Html>           
       </Suspense>
       </Canvas>
