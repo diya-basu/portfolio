@@ -30,7 +30,7 @@ export default function Objects() {
   useEffect(() => {
     setTimeout(() => {setLoading(false);
     setFadeIn(true);
-  },5000);
+  },4000);
   }, [])
   const show = {
     opacity: 1,
