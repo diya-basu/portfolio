@@ -71,7 +71,7 @@ button:hover {
   text-shadow :4px 4px 2px #062b88 ;/* Set the text color to white */
   font-weight: bold;
   z-index:1;
- 
+  margin-bottom:40px;
 }
 
 /* @media screen and(max-width:768px){

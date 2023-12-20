@@ -78,7 +78,7 @@ export default function Objects() {
                     <p>•Creative Developer<br></br>•Content Writer<br></br>•AI-ML Programmer</p>
                     </div>
                   <div className="buttons" style={{position: 'absolute',
-                      top:isMobile?'-450px':'-430px',
+                      top:isMobile?'-450px':'-415px',
                       left:isMobile?'-190px':'-700px',
                     }}>
                     <button
