@@ -2,7 +2,7 @@
   "name": "vite-project",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://diya-basu.github.io/portfolio",
+  "homepage": "https://diyabasu.tech",
   "type": "module",
   "scripts": {
     "dev": "vite",

@@ -8,7 +8,6 @@ import { useRef } from "react"
 
 
 export default function Object(){
-
     const fullscene=useLoader(GLTFLoader,'./scene.gltf')
     const group = useRef()
     // const { position, rotation, reset } = useControls({
