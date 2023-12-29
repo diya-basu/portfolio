@@ -1,15 +1,32 @@
-import {OrbitControls,useGLTF,Html} from "@react-three/drei"
+import {OrbitControls,Html} from "@react-three/drei"
 import {useLoader} from "@react-three/fiber"
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader"
 import { useRef } from "react"
+// import { button, folder, useControls } from "leva"
+
 
 
 
 export default function Object(){
-    useGLTF.preload('./scene.gltf')
 
     const fullscene=useLoader(GLTFLoader,'./scene.gltf')
     const group = useRef()
+    // const { position, rotation, reset } = useControls({
+    //   position: [0, -2, -0.12],
+    //   rotation: [0, -Math.PI / 4.09, 0],
+    //   transform: folder({
+    //     position: [0, -2, -0.12],
+    //     rotation: [0, -Math.PI / 4.09, 0],
+    //   }),
+    //   reset: button(() => {
+    //     reset({
+    //       position: [0, -2, -0.12],
+    //       rotation: [0, -Math.PI / 4.09, 0],
+    //     });
+    //   }),
+    // });
+
+    
     return<>
         <OrbitControls
         minDistance={6}
@@ -22,7 +39,7 @@ export default function Object(){
        <group>
        {/* <primitive object={bg.scene} ref={group} scale={[0.8, 0.8, 0.8]} position={[0,-2,-0.12]} rotation={[0, -Math.PI / 2, 0]} /> */}
        <primitive object={fullscene.scene} ref={group} position={[0,-2,-0.16]} rotation={[0,-Math.PI/4.09,0]}/>
-       <Html wrapperClass="gltf" position={[0.21,1.13,0.001]} transform distanceFactor={2.5} rotation={[-0.013,Math.PI/4,0]} >
+       <Html wrapperClass="gltf" position={[0,1.14,0]} transform distanceFactor={2.51} rotation={[0.0,0.8,0]} >
          <iframe title="embed" src="./mac/index.html"/>
        </Html>
        </group>

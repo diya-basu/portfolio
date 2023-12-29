@@ -40,6 +40,7 @@ button:hover {
   border: 2px solid #2E41B0; /* Change the border color to white on hover */
   color: white; /* Change the text color to white on hover */
    box-shadow: 0 6px 10px 0 #002250;
+  
 }
 .buttons{
   display:flex;

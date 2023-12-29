@@ -2,7 +2,7 @@
 import React, { useState, useRef, useEffect , Suspense} from "react"
 import './index.css'
 import {Canvas} from "@react-three/fiber"
-import {Shadow, Html, CameraControls,useProgress,Loader} from "@react-three/drei"
+import {Shadow, Html, CameraControls,useProgress,useGLTF} from "@react-three/drei"
 import Object from "./Object"
 import LoadingScreen from "./LoadingScreen"
 
@@ -10,6 +10,7 @@ import LoadingScreen from "./LoadingScreen"
 
 
 export default function Objects() {
+   useGLTF.preload('./scene.gltf')
    const cameraControlRef = useRef();
    const [isLoading, setIsLoading] = useState(true);
 
@@ -96,7 +97,7 @@ export default function Objects() {
                       type="button"
                       onClick={() => {
                         isMobile?cameraControlRef.current?.setPosition(2,0,-9,true):
-                        cameraControlRef.current?.setPosition(1,1.5,-7,true);
+                        cameraControlRef.current?.setPosition(1,-1.89,-4,true);
                         transitaudio.play();
                         bgaudio.play();
                         bgaudio.loop=true;
